@@ -19,7 +19,7 @@ export async function GET(request: Request) {
     const weatherData = await weatherResponse.json();
     const temperature = Math.round(weatherData.current.temp);
     const condition = weatherData.current.weather[0].main;
-    const canWearShorts = temperature >= 70;
+    const canWearShorts = temperature >= 60;
     
     return NextResponse.json({
       canWearShorts,

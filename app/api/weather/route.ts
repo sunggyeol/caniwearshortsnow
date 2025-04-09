@@ -48,8 +48,7 @@ export async function GET(request: Request) {
 }
 
 function decideIfCanWearShorts(temp: number, condition: string): boolean {
-  // Updated temperature threshold for Fahrenheit (68°F is approximately 20°C)
-  const isWarm = temp >= 68;
+  const isWarm = temp >= 60;
   const isNotRaining = !['Rain', 'Thunderstorm', 'Drizzle'].includes(condition);
   
   return isWarm && isNotRaining;
