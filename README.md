@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# caniwearshortsnow?
 
 ## Getting Started
 
@@ -19,6 +19,38 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Features
+
+- Fetches weather data using geolocation or IP-based location as a fallback.
+- Uses the OpenWeather API to determine the current temperature and weather conditions.
+- Displays whether you can wear shorts based on the temperature and weather conditions.
+- Provides a retry button in case of errors fetching weather data.
+
+## Weather Decision Logic
+
+The app determines if you can wear shorts based on:
+- Temperature: Shorts are recommended if the temperature is 68°F (20°C) or higher.
+- Weather conditions: Shorts are not recommended during rain, thunderstorms, or drizzle.
+
+## API Endpoints
+
+### `/api/weather`
+Fetches weather data based on latitude and longitude.
+
+- **Query Parameters**:
+  - `lat`: Latitude of the location.
+  - `lon`: Longitude of the location.
+
+### `/api/weather-by-ip`
+Fetches weather data based on the user's IP address.
+
+## Environment Variables
+
+To run this project, you need to set up the following environment variables:
+
+- `OPENWEATHER_API_KEY`: Your OpenWeather API key.
+- `IPINFO_TOKEN`: Your IPInfo API token.
 
 ## Learn More
 
