@@ -1,4 +1,5 @@
 import LocationWeather from '@/components/LocationWeather';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   return (
