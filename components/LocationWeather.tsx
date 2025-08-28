@@ -66,11 +66,11 @@ export default function LocationWeather() {
   if (error) {
     return (
       <div className="text-center">
-        <p className="text-xl text-red-500 mb-4">{error}</p>
+        <p className="text-lg sm:text-xl text-red-500 mb-4 px-4">{error}</p>
         <button
           className="px-6 py-3 bg-black hover:bg-gray-800 text-white font-medium rounded-lg 
           border-2 border-white shadow-md transition duration-300 ease-in-out transform hover:scale-105 
-          focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+          focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 touch-manipulation"
           onClick={getLocationAndWeather}
           style={{ boxShadow: '0 0 0 1px rgba(255, 255, 255, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1)' }}
         >
@@ -84,13 +84,13 @@ export default function LocationWeather() {
     <div className="text-center">
       {weather && (
         <>
-          <h1 className="text-5xl font-bold mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             {weather.canWearShorts ? 'YES!' : 'NO'}
           </h1>
-          <p className="text-xl mb-3">
+          <p className="text-lg sm:text-xl mb-3 px-4">
             {weather.canWearShorts ? 'Wear shorts today!' : 'Wear pants today!'}
           </p>
-          <p className="text-lg">{weather.temperature}°F - {weather.condition}</p>
+          <p className="text-base sm:text-lg px-4">{weather.temperature}°F - {weather.condition}</p>
         </>
       )}
     </div>

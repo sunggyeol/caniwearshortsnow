@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
-        <Analytics mode="production" />;
+        <Analytics mode="production" />
       </body>
     </html>
   );
