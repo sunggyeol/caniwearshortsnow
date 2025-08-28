@@ -21,7 +21,7 @@ export default function Home() {
           aria-label="GitHub Profile"
         >
           <Image 
-            src="/github-mark-white.svg" 
+            src="/github.svg" 
             alt="GitHub" 
             width={20} 
             height={20}
@@ -37,7 +37,7 @@ export default function Home() {
           aria-label="Personal Website"
         >
           <Image 
-            src="/personal-center-svgrepo-com.svg" 
+            src="/personal.svg" 
             alt="Personal Website" 
             width={20} 
             height={20}
