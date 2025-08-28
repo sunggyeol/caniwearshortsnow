@@ -30,6 +30,22 @@ export default function Home() {
         </a>
         
         <a 
+          href="https://www.linkedin.com/in/sungoh/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex items-center justify-center p-3 sm:p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110 touch-manipulation"
+          aria-label="LinkedIn Profile"
+        >
+          <Image 
+            src="/linkedin.svg" 
+            alt="LinkedIn" 
+            width={20} 
+            height={20}
+            className="dark:invert-0 invert"
+          />
+        </a>
+        
+        <a 
           href="https://sungohdev.com" 
           target="_blank" 
           rel="noopener noreferrer"
